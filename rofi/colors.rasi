@@ -1,0 +1,12 @@
+* {
+    foreground: #FFFBDA;
+    foreground-alt: #F6F1C1;
+
+    background-main: #000204E8;
+    background-input: #000204E8;
+
+    background-selected: #B3977F80;
+
+    accent: #B3977F;
+    border-color: #B3977F99;
+}

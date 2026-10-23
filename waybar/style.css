@@ -1,0 +1,217 @@
+@import url("colors.css");
+
+* {
+    font-family: "JetBrainsMono Nerd Font", sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+/* =========================
+   WAYBAR
+   ========================= */
+
+window#waybar {
+    background: transparent;
+    color: @wb-fg;
+    border: none;
+}
+
+/* =========================
+   FLOATING GROUPS
+   ========================= */
+
+.modules-left,
+.modules-center,
+.modules-right {
+    background: alpha(@wb-bg, 0.72);
+
+    border: 1px solid alpha(@wb-accent, 0.20);
+    border-radius: 10px;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.16);
+}
+
+/* =========================
+   LEFT / WORKSPACES
+   ========================= */
+
+.modules-left {
+    padding: 0 2px;
+}
+
+#workspaces {
+    margin: 0;
+}
+
+#workspaces button {
+    min-width: 16px;
+
+    padding: 0 5px;
+    margin: 1px 1px;
+
+    color: @wb-muted;
+    background: transparent;
+
+    border: none;
+    border-radius: 7px;
+
+    box-shadow: none;
+
+    transition:
+        background-color 0.18s ease,
+        color 0.18s ease;
+}
+
+#workspaces button:hover {
+    color: @wb-fg;
+    background: @wb-accent-soft;
+}
+
+#workspaces button.active {
+    color: @wb-fg;
+    background: alpha(@wb-accent, 0.62);
+}
+
+#workspaces button.urgent {
+    color: @wb-fg;
+    background: alpha(@wb-critical, 0.72);
+}
+
+/* =========================
+   CENTER / CLOCK
+   ========================= */
+
+.modules-center {
+    padding: 0 9px;
+}
+
+#clock {
+    padding: 0;
+
+    color: @wb-fg;
+    background: transparent;
+
+    border: none;
+    border-radius: 0;
+}
+
+/* =========================
+   RIGHT GROUP
+   ========================= */
+
+.modules-right {
+    padding: 0 3px;
+}
+
+/* =========================
+   SYSTEM MODULES
+   ========================= */
+
+#network,
+#bluetooth,
+#temperature,
+#pulseaudio,
+#battery,
+#power-profiles-daemon {
+    margin: 0 1px;
+    padding: 0 6px;
+
+    color: @wb-fg;
+    background: transparent;
+
+    border: none;
+    border-radius: 7px;
+
+    transition:
+        background-color 0.18s ease,
+        color 0.18s ease;
+}
+
+#network:hover,
+#bluetooth:hover,
+#temperature:hover,
+#pulseaudio:hover,
+#battery:hover,
+#power-profiles-daemon:hover {
+    color: @wb-fg;
+    background: @wb-accent-soft;
+}
+
+/* =========================
+   NETWORK
+   ========================= */
+
+#network {
+    color: @wb-accent;
+}
+
+/* =========================
+   BLUETOOTH
+   ========================= */
+
+#bluetooth {
+    color: @wb-fg;
+}
+
+/* =========================
+   TEMPERATURE
+   ========================= */
+
+#temperature {
+    color: @wb-fg;
+}
+
+#temperature.critical {
+    color: @wb-fg;
+    background: alpha(@wb-critical, 0.70);
+}
+
+/* =========================
+   AUDIO
+   ========================= */
+
+#pulseaudio {
+    color: @wb-fg;
+}
+
+#pulseaudio.muted {
+    color: @wb-muted;
+}
+
+/* =========================
+   BATTERY
+   ========================= */
+
+#battery {
+    color: @wb-fg;
+}
+
+#battery.warning {
+    color: @wb-warning;
+}
+
+#battery.critical:not(.charging) {
+    color: @wb-fg;
+    background: alpha(@wb-critical, 0.70);
+}
+
+/* =========================
+   POWER PROFILE
+   ========================= */
+
+#power-profiles-daemon {
+    color: @wb-accent;
+}
+
+#power-profiles-daemon.performance {
+    color: @wb-warning;
+}
+
+#power-profiles-daemon.balanced {
+    color: @wb-accent;
+}
+
+#power-profiles-daemon.power-saver {
+    color: @wb-green;
+}

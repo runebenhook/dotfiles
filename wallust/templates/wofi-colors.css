@@ -1,0 +1,5 @@
+@define-color base-bg alpha({{background}}, 0.85);
+@define-color base-input alpha({{color0}}, 0.7);
+@define-color base-accent alpha({{color4}}, 0.8);
+@define-color base-accent-soft alpha({{color4}}, 0.15);
+@define-color base-accent-border alpha({{color4}}, 0.6);

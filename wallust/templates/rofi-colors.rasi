@@ -1,0 +1,12 @@
+* {
+    foreground: {{foreground}};
+    foreground-alt: {{color7}};
+
+    background-main: {{background}}E8;
+    background-input: {{color0}}E8;
+
+    background-selected: {{color12}}80;
+
+    accent: {{color12}};
+    border-color: {{color12}}99;
+}

@@ -1,0 +1,10 @@
+width=470
+location=center
+show=dmenu
+allow_images=true
+image_size=118
+columns=3
+hide_scroll=true
+content_halign=center
+halign=fill
+cache_file=/dev/null

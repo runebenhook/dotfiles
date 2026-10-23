@@ -1,0 +1,20 @@
+@define-color wb-bg alpha(#000204, 0.94);
+@define-color wb-fg #FFFBDA;
+@define-color wb-muted #F6F1C1;
+
+@define-color wb-surface alpha(#000204, 0.65);
+@define-color wb-surface-soft alpha(#000204, 0.55);
+
+/* Accent más vivo */
+@define-color wb-accent #B3977F;
+@define-color wb-accent-soft alpha(#B3977F, 0.12);
+@define-color wb-accent-medium alpha(#B3977F, 0.65);
+@define-color wb-accent-strong alpha(#B3977F, 0.75);
+@define-color wb-border alpha(#B3977F, 0.35);
+
+@define-color wb-warning #F64760;
+@define-color wb-critical #3B868D;
+@define-color wb-green #8E72A1;
+
+@define-color wb-blue #B3977F;
+@define-color wb-yellow #F64760;

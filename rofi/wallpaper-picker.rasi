@@ -1,0 +1,68 @@
+* {
+    border-disable-nvidia-workaround: true;
+    border-aa: false;
+}
+
+configuration {
+    modi: "wallpapers:~/.config/rofi/scripts/wallpaper-picker.sh";
+    show-icons: true;
+}
+
+window {
+    background-color: rgba(30, 30, 46, 90%);
+    border: 1px;
+    border-color: rgba(137, 180, 250, 100%);
+    border-radius: 16px;
+    width: 32%;
+    location: center;
+}
+
+mainbox {
+    padding: 10px;
+}
+
+inputbar {
+    background-color: rgba(49, 50, 68, 80%);
+    border-radius: 10px;
+    padding: 6px 10px;
+    children: [ entry ];
+}
+
+entry {
+    background-color: transparent;
+    text-color: rgba(205, 214, 244, 100%);
+    placeholder: "Buscar wallpaper...";
+    placeholder-color: rgba(108, 112, 134, 100%);
+}
+
+listview {
+    columns: 3;
+    lines: 2;
+    spacing: 8px;
+    padding: 10px 0px 0px 0px;
+}
+
+element {
+    orientation: vertical;
+    border-radius: 10px;
+    padding: 4px;
+}
+
+element selected {
+    background-color: rgba(49, 50, 68, 80%);
+    border: 1px;
+    border-color: rgba(137, 180, 250, 100%);
+}
+
+element-icon {
+    size: 140px;
+    border-radius: 8px;
+    horizontal-align: 0.5;
+}
+
+element-text {
+    text-color: rgba(205, 214, 244, 100%);
+    font: "JetBrainsMono Nerd Font 9";
+    horizontal-align: 0.5;
+    padding: 2px 0px 0px 0px;
+}

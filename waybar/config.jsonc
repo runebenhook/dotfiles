@@ -1,0 +1,131 @@
+
+{
+
+    "layer": "top",
+    "position": "top",
+    "height": 28,
+    "spacing": 4,
+    "exclusive": true,
+    "margin": "6 17 0 17",
+
+    "modules-left": [
+    "hyprland/workspaces"
+    ],   
+
+    "modules-center": [
+        "clock"
+    ],
+
+    "modules-right": [
+        "network",
+	"bluetooth",
+	"temperature",
+        "pulseaudio",
+        "power-profiles-daemon",
+        "battery"
+    ],
+ 
+   "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "format": "{name}",
+    "sort-by-id": true
+    },
+
+    "hyprland/window": {
+        "format": "{}",
+        "max-length": 50
+    },
+
+    "cpu": {
+        "format": "CPU {usage}%",
+        "tooltip": false
+    },
+
+    "memory": {
+        "format": "RAM {}%"
+    },
+
+    "network": {
+        "format-wifi": "",
+        "format-ethernet": "󰈀",
+        "format-disconnected": "󰤭",
+        "tooltip-format": "{ifname}\n{essid}\nSeñal: {signalStrength}%"
+    },
+
+    "bluetooth": {
+   	 "format": "",
+   	 "format-disabled": "󰂲",
+   	 "format-off": "󰂲",
+   	 "format-on": "",
+   	 "format-connected": "",
+   	 "tooltip-format": "{status}"
+    },
+
+    "pulseaudio": {
+   	 "format": "{icon} {volume}%",
+   	 "format-muted": "󰖁",
+   	 "format-icons": {
+       	 "default": ["", "", ""]
+        },
+	    "on-click": "pavucontrol"
+	},
+
+    "backlight": {
+        "format": "{percent}% {icon}",
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+
+
+    "power-profiles-daemon": {
+        "format": "{icon}",
+        "tooltip-format": "Perfil: {profile}\nDriver: {driver}",
+        "tooltip": true,
+        "format-icons": {
+            "default": "󰊚",
+            "performance": "󰓅",
+            "balanced": "󰗑",
+            "power-saver": "󰾆"
+        }
+    },
+
+    "battery": {
+   	 "bat": "BAT0",
+   	 "states": {
+       		 "warning": 30,
+       		 "critical": 15
+    },
+   	 "format": "{icon} {capacity}%",
+   	 "format-charging": "󰂄 {capacity}%",
+   	 "format-plugged": "󰚥 {capacity}%",
+   	 "format-icons": [
+       		 "",
+       		 "",
+       		 "",
+       		 "",
+       		 ""
+   	 ]
+	},
+
+    "clock": {
+        "format": "{:%a %d %b  •  %H:%M}",
+        "format-alt": "{:%d/%m/%Y}",
+        "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+
+
+"tray": {
+    "spacing": 10
+},
+
+}

@@ -1,0 +1,77 @@
+@import url("colors.css");
+
+/* Ventana principal */
+window {
+    background-color: @base-bg;
+    border: 1px solid @base-accent-border;
+    border-radius: 16px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* Contenedor general */
+#outer-box {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Buscador */
+#input {
+    background-color: @base-input;
+    color: #e0e0e0;
+
+    border: 1px solid @base-accent-border;
+    border-radius: 10px;
+
+    margin: 12px 12px 8px 12px;
+    padding: 7px 10px;
+
+    font-size: 13px;
+}
+
+/* Área de wallpapers */
+#scroll {
+    margin: 0px;
+    padding: 0px;
+}
+
+#inner-box {
+    padding: 4px 10px 10px 10px;
+    margin: 0px;
+}
+
+/* Card individual */
+#entry {
+    background-color: alpha(@base-input, 0.22);
+
+    border: 1px solid transparent;
+    border-radius: 10px;
+
+    padding: 4px;
+    margin: 3px;
+
+    min-width: 0px;
+}
+
+/* Wallpaper seleccionado */
+#entry:selected {
+    background-color: @base-accent-soft;
+    border: 1px solid @base-accent;
+}
+
+/* Imagen */
+#img {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Ocultamos completamente los nombres */
+#text {
+    color: transparent;
+    font-size: 0px;
+
+    min-width: 0px;
+    min-height: 0px;
+
+    margin: 0px;
+    padding: 0px;
+}

@@ -1,0 +1,20 @@
+@define-color wb-bg alpha({{background}}, 0.94);
+@define-color wb-fg {{foreground}};
+@define-color wb-muted {{color7}};
+
+@define-color wb-surface alpha({{color0}}, 0.65);
+@define-color wb-surface-soft alpha({{color0}}, 0.55);
+
+/* Accent más vivo */
+@define-color wb-accent {{color12}};
+@define-color wb-accent-soft alpha({{color12}}, 0.12);
+@define-color wb-accent-medium alpha({{color12}}, 0.65);
+@define-color wb-accent-strong alpha({{color12}}, 0.75);
+@define-color wb-border alpha({{color12}}, 0.35);
+
+@define-color wb-warning {{color3}};
+@define-color wb-critical {{color1}};
+@define-color wb-green {{color2}};
+
+@define-color wb-blue {{color4}};
+@define-color wb-yellow {{color3}};

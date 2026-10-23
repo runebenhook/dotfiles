@@ -1,0 +1,8 @@
+[templates]
+wofi_colors = { template = "wofi-colors.css", target = "~/.config/wofi/colors.css" }
+quickshell_colors = { template = "quickshell-colors.qml", target = "~/.config/quickshell/config/Colors.qml" }
+waybar_colors = { template = "waybar-colors.css", target = "~/.config/waybar/colors.css" }
+kitty_colors = { template = "kitty-colors.conf", target = "~/.config/kitty/colors.conf" }
+hypr_colors = { template = "hypr-colors.lua", target = "~/.config/hypr/generated-colors.lua" }
+rofi_colors = { template = "rofi-colors.rasi", target = "~/.config/rofi/colors.rasi" }
+hyprlock_colors = { template = "hyprlock-colors.conf", target = "~/.config/hypr/hyprlock-colors.conf" }
